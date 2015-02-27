@@ -19,7 +19,8 @@
     ],
     "extra": {
         "map": [
-            ["../stripe", "lib/Webgriffe/Stripe"]
+            ["../stripe", "lib/Webgriffe/Stripe"],
+            ["../../stripe/stripe-php/lib", "lib/Stripe"]
         ]
     }
 }
