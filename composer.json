@@ -1,0 +1,25 @@
+{
+    "name": "webgriffe/stripe-m1",
+    "type": "magento-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Webgriffe SRL",
+            "email": "support@webgriffe.com"
+        }
+    ],
+    "require": {
+        "webgriffe/stripe": "dev-master"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:webgriffe/stripe.git"
+        }
+    ],
+    "extra": {
+        "map": [
+            ["../stripe", "lib/Webgriffe/Stripe"]
+        ]
+    }
+}
