@@ -9,18 +9,13 @@
         }
     ],
     "require": {
-        "webgriffe/stripe": "dev-master"
+        "webgriffe/stripe": "dev-master",
+        "firegento/psr0autoloader": "*"
     },
     "repositories": [
         {
             "type": "vcs",
             "url": "git@github.com:webgriffe/stripe.git"
         }
-    ],
-    "extra": {
-        "map": [
-            ["../stripe", "lib/Webgriffe/Stripe"],
-            ["../../stripe/stripe-php/lib", "lib/Stripe"]
-        ]
-    }
+    ]
 }
