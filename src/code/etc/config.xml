@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webgriffe_Stripe>
+            <version>0.1.0</version>
+        </Webgriffe_Stripe>
+    </modules>
+    <global>
+        <models>
+            <webgriffe_stripe>
+                <class>Webgriffe_Stripe_Model</class>
+                <resourceModel>webgriffe_stripe_resource</resourceModel>
+            </webgriffe_stripe>
+            <webgriffe_stripe_resource>
+                <class>Webgriffe_Stripe_Model_Resource</class>
+            </webgriffe_stripe_resource>
+        </models>
+        <blocks>
+            <webgriffe_stripe>
+                <class>Webgriffe_Stripe_Block</class>
+            </webgriffe_stripe>
+        </blocks>
+        <helpers>
+            <webgriffe_stripe>
+                <class>Webgriffe_Stripe_Helper</class>
+            </webgriffe_stripe>
+        </helpers>
+    </global>
+</config>

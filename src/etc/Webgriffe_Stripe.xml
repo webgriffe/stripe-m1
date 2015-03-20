@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Webgriffe_Stripe>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Hackathon_PSR0Autoloader/>
+                <Mage_Core/>
+                <Mage_Payment/>
+
+            </depends>
+        </Webgriffe_Stripe>
+    </modules>
+</config>

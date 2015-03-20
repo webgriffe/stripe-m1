@@ -23,6 +23,8 @@
         }
     ],
     "extra": {
-        "map": []
+        "map": [
+            ["src/code", "app/code/community/Webgriffe/Stripe"]
+        ]
     }
 }
