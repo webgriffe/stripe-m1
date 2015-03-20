@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "webgriffe/stripe": "dev-master",
+        "webgriffe/stripe": "*",
         "firegento/psr0autoloader": "*"
     },
     "repositories": [
