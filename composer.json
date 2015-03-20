@@ -21,5 +21,8 @@
             "type": "vcs",
             "url": "git@github.com:webgriffe/stripe.git"
         }
-    ]
+    ],
+    "extra": {
+        "map": []
+    }
 }
