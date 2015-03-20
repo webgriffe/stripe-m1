@@ -26,4 +26,17 @@
             </webgriffe_stripe>
         </helpers>
     </global>
+    <frontend>
+        <events>
+            <controller_action_predispatch_checkout_onepage_index>
+                <observers>
+                    <webgriffe_stripe>
+                        <type>singleton</type>
+                        <class>webgriffe_stripe/observer</class>
+                        <method>addStripeJs</method>
+                    </webgriffe_stripe>
+                </observers>
+            </controller_action_predispatch_checkout_onepage_index>
+        </events>
+    </frontend>
 </config>

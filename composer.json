@@ -24,6 +24,7 @@
     ],
     "extra": {
         "map": [
+            ["src/etc/Webgriffe_Stripe.xml", "app/code/community/Webgriffe/Stripe"],
             ["src/code", "app/code/community/Webgriffe/Stripe"]
         ]
     }
