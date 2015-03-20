@@ -14,6 +14,10 @@
     },
     "repositories": [
         {
+            "type": "composer",
+            "url": "http://packages.firegento.com/"
+        },
+        {
             "type": "vcs",
             "url": "git@github.com:webgriffe/stripe.git"
         }
