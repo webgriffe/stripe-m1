@@ -8,16 +8,18 @@
 
 class Webgriffe_Stripe_Model_Observer
 {
-
-    public function addStripeJs(Varien_Event_Observer $event)
+    /**
+     * @event controller_action_layout_render_before_checkout_onepage_index
+     */
+    public function addStripeJavascriptBlock(Varien_Event_Observer $event)
     {
-        /** @var Mage_Core_Controller_Varien_Action $controller */
-        $controller = $event->getControllerAction();
         /** @var Mage_Page_Block_Html_Head $headBlock */
-        $headBlock = $controller->getLayout()->getBlock('head');
+        $headBlock = Mage::app()->getLayout()->getBlock('head');
 
         if ($headBlock) {
-            $headBlock->addJs('https://js.stripe.com/v2/');
+            /** @var Webgriffe_Stripe_Block_Page_Html_Head_Javascript $scriptBlock */
+            $scriptBlock = $headBlock->getLayout()->createBlock('webgriffe_stripe/page_html_head_javascript', 'head.stripe.javascript');
+            $headBlock->append($scriptBlock);
         }
     }
 }

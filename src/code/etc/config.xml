@@ -28,15 +28,15 @@
     </global>
     <frontend>
         <events>
-            <controller_action_predispatch_checkout_onepage_index>
+            <controller_action_layout_render_before_checkout_onepage_index>
                 <observers>
                     <webgriffe_stripe>
                         <type>singleton</type>
                         <class>webgriffe_stripe/observer</class>
-                        <method>addStripeJs</method>
+                        <method>addStripeJavascriptBlock</method>
                     </webgriffe_stripe>
                 </observers>
-            </controller_action_predispatch_checkout_onepage_index>
+            </controller_action_layout_render_before_checkout_onepage_index>
         </events>
     </frontend>
 </config>
